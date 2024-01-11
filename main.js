@@ -65,7 +65,6 @@ class MultiInputBox extends HTMLElement {
         container.appendChild(removeButton);
         container.appendChild(addButton);
         
-
         return container;
     }
 
@@ -83,20 +82,6 @@ class MultiInputBox extends HTMLElement {
             addButton.innerText = '+';
             divContainer.appendChild(addButton);
         }
-    }
-
-    disconnectedCallback() {
-        console.log("disconnectedCallback");
-    }
-
-    adoptedCallback() {
-        console.log("adoptedCallback");
-    }
-
-    attributeChangedCallback(name, oldValue, newValue) {
-        console.log('attributeChangedCallback', name);
-        console.log("oldValue", oldValue, 'newValue', newValue);
-
     }
 
     addStyle() {
